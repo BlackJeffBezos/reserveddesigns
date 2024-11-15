@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>reserveddesigns</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-wide"><img src="Website Pictures/RESEVED DESIGNS LOGO.jpg" alt="Reserved Designs LOGO here" style="width:5%;margin-left: 0px">Reserved Designs</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+      <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue"></i> STORE</a>
+      <a href="About.html" class="w3-bar-item w3-button w3-hover-blue"></i> ABOUT</a>
+      <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+  <a href="Store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
+  <a href="About.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
+  <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
+</nav>  
+
+      <!-- Store Section -->
+<div class="w3-container w3-content" style="max-width:800px" id="home">
+    <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:65px"><h2 class="w3-wide"><b>STORE</b></h2></div>
+    <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:32px"><h3 class="w3-wide">Welcome to our store, All the crafts are Reserved just for you.</h3></div>
+</div>
+<div class="w3-container w3-content" style="max-width:1000px">
+<h2>NEW CRAFTS COMING UP EVERY WEEK, WATCH US ON YOUTUBE & TIKTOK TO WITNESS THE CREATION JOURNEY, THE FUN AND CHALLENGES EXPERIENCED TO BRING THEM TO LIFE. 
+</h2>
+</div>
+
+
+
+
+<img src="Website pictures/BANK FOOTER.png" class="w3-image" style="width:100%;margin-top:48px;margin-bottom:0px;margin-left:30px">
+    <!-- Infomation photo -->
+    <img src="Website pictures/footer info 4.png" class="w3-image w3-greyscale" style="width:40%;margin-top:60px;margin-bottom:48px;margin-left:350px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=100067419824272&mibextid=LQQJ4d"><i class="fa fa-facebook-official w3-hover-black"></i></a>
+    <a href="https://www.instagram.com/redmustard8/profilecard/?igsh=MXRtZjZmYzA2OWVzdA=="><i class="fa fa-instagram w3-hover-black"></i></a>
+    <a href="https://www.youtube.com/channel/UCEc8Zv1m-W63qHKf0EYW98Q"><i class="fa fa-youtube w3-hover-black"></i></a>
+    <a href="https://pin.it/6DHkUvyFU"><i class="fa fa-pinterest-p w3-hover-black"></i></a>
+    <a href="http://x.com/@TheManInvolved/"><i class="fa fa-twitter w3-hover-black"></i></a>
+    <a href="https://www.linkedin.com/in/ndinga-dyongo-584312238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin w3-hover-black"></i></a>
+  </div>
+  <p>Powered by <a href="https://www.tiktok.com//@the_last_jonin/" title="cava us on tiktok" target="_blank" class="w3-hover-text-black">Reserved Designs (PTY) Ltd</a> est. 2023. All Rights reserved.</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
