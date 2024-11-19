@@ -1,50 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reserved Designs</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body, h1, h2, h3, h4, h5, h6 {
-      font-family: "Raleway", sans-serif;
-    }
-    body, html {
-      height: 100%;
-      line-height: 1.8;
-    }
-    .w3-bar .w3-button {
-      padding: 16px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .responsive-service {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .responsive-service > div {
-      flex: 1 1 30%;
-      margin: 10px;
-      box-sizing: border-box;
-    }
-    @media screen and (max-width: 768px) {
-      .responsive-service > div {
-        flex: 1 1 100%;
-      }
-    }
-    .cta-section {
-      margin: 10% 10px;
-      text-align: center;
-    }
-    .cta-section h2 {
-      margin-bottom: 15px;
-    }
-  </style>
+<title>Reserved Designs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+</style>
 </head>
 <body>
 
@@ -52,107 +28,119 @@
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="index.html" class="w3-bar-item w3-wide">
-      <img src="Website pictures/logo.JPG" alt="LOGO here" style="width:50px;">
-      Reserved Designs
+      <img src="Website pictures/logo.JPG" alt="LOGO here" style="width:5%;margin-left:0px">Reserved Designs
     </a>
-    <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
       <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
       <a href="About.html" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
       <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
     </div>
-    <!-- Menu icon for small screens -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-<!-- Sidebar for small screens -->
+<!-- Sidebar on small screens -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large">×</a>
-  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-  <a href="Store.html" class="w3-bar-item w3-button">STORE</a>
-  <a href="About.html" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="Contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+  <a href="Store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
+  <a href="About.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
+  <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
 </nav>
 
-<!-- Design Section -->
+<!-- Main Content -->
 <div class="w3-container w3-content" style="max-width:800px" id="home">
-  <h2 class="w3-center w3-wide" style="margin-top:65px"><b>WEB DESIGN & DEVELOPMENT</b></h2>
-  <p class="w3-center">In today’s digital world, your website is often the first impression you make. We don’t just build websites, we create immersive, purpose-driven experiences that connect with your audience and drive results.</p>
+  <div class="w3-center" style="margin-top:65px">
+    <h2 class="w3-wide"><b>WEB DESIGN & DEVELOPMENT</b></h2>
+  </div>
+  <h4>In today’s digital world, your website is often the first impression you make. We don’t just build websites; we create immersive, purpose-driven experiences that connect with your audience and drive results. Whether you're a business aiming to expand your reach, a freelancer ready to showcase your talents, or a restaurant looking to enhance the dining experience with digital menus and easy reservations, we’re here to bring your vision to life with innovation, style, and functionality.</h4>
 </div>
 
-<!-- Design Image Section -->
 <div class="w3-row w3-padding-64">
   <div class="w3-col l6 w3-padding-large">
-    <img src="Website pictures/Online Shop.png" alt="WEB DESIGN">
+    <img src="Website pictures/Online Shop.png" class="w3-round w3-image" alt="WEB DESIGN" style="width:100%">
   </div>
   <div class="w3-col l6 w3-padding-large">
-    <h3><b>Get crafted websites that not only look stunning but also perform seamlessly.</b></h3>
+    <h1><b>Get crafted websites that not only look stunning but also perform seamlessly.</b></h1>
   </div>
 </div>
 
-<!-- Services Section -->
+<!-- Website Services -->
 <div class="w3-blue">
-  <div class="w3-container w3-content w3-padding-64">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide w3-center">WEBSITE SERVICES:</h2>
-    <div class="responsive-service">
-      <div class="w3-container w3-white">
-        <h4><b>BUSINESS & BLOGS</b></h4>
-        <ul>
-          <li>Custom Design and Branding</li>
-          <li>Lead Generation & CTA Integration</li>
-          <li>Responsive & Mobile Friendly</li>
-          <li>SEO Optimization</li>
-          <li>E-commerce Options</li>
-        </ul>
+    <div class="w3-row-padding w3-padding-32">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <p><b>BUSINESS & BLOGS</b></p>
+          <p class="w3-opacity">Get an impactful online presence.</p>
+          <ul>
+            <li><h4>Custom Design and Branding</h4></li>
+            <li><h4>Lead generation & CTA Integration</h4></li>
+            <li><h4>Responsive & mobile friendly</h4></li>
+            <li><h4>SEO Optimization</h4></li>
+            <li><h4>E-commerce options</h4></li>
+          </ul>
+        </div>
       </div>
-      <div class="w3-container w3-white">
-        <h4><b>FREELANCERS & CREATIVES</b></h4>
-        <ul>
-          <li>Portfolio Display</li>
-          <li>Project Showcasing</li>
-          <li>Service & Pricing Pages</li>
-          <li>Easy-to-update Design</li>
-          <li>Client Testimonials & Case Studies</li>
-        </ul>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <p><b>FREELANCERS & CREATIVES</b></p>
+          <p class="w3-opacity">Showcase your work and attract new clients.</p>
+          <ul>
+            <li><h4>Portfolio Display</h4></li>
+            <li><h4>Project Showcasing</h4></li>
+            <li><h4>Service & Pricing pages</h4></li>
+            <li><h4>Easy-to-update Design</h4></li>
+            <li><h4>Clients’ testimonials & case studies</h4></li>
+          </ul>
+        </div>
       </div>
-      <div class="w3-container w3-white">
-        <h4><b>RESTAURANTS & HOTELS</b></h4>
-        <ul>
-          <li>Digital Menu</li>
-          <li>Online Reservation</li>
-          <li>Product Pages for Menu Items</li>
-          <li>CTA for Reservations & Orders</li>
-          <li>Photo Galleries</li>
-        </ul>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <p><b>RESTAURANTS & HOTELS</b></p>
+          <p class="w3-opacity">Simplify & enhance user experience.</p>
+          <ul>
+            <li><h4>Digital Menu</h4></li>
+            <li><h4>Online Reservation</h4></li>
+            <li><h4>Product pages for menu items</h4></li>
+            <li><h4>CTA for reservation & orders</h4></li>
+            <li><h4>Photo galleries</h4></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- CTA Section -->
-<div class="cta-section">
+<!-- Customization and CTA -->
+<div class="w3-container" style="margin-top: 10%; padding: 20px; text-align: center;">
+  <h4>These are our Website services, but they are not limited to the above. You can customize any service according to your needs and budget.</h4>
   <h2>Get Started Today</h2>
-  <p>Ready to elevate your brand or bring your creative projects to life? Contact us today to consult on your needs and discover how we can help.</p>
+  <h4>Ready to elevate your brand or bring your creative projects to life? Contact us today to consult your graphic design needs and discover how we can elevate your brand.</h4>
 </div>
 
-    <!-- Infomation photo -->
-    <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:800px">
-      <img src="Website pictures/Footer info 4.png" class="w3-image w3-greyscale" style="width:40%;margin-top:48px;margin-bottom:48px;margin-left:350px">
-    </div>
+<!-- Information Photo Section -->
+<div class="w3-center">
+  <img src="Website pictures/Footer info 4.png" class="w3-image w3-greyscale" alt="Information" style="width:80%;max-width:600px;margin-top:30px;">
+</div>
+
 <!-- Footer -->
 <footer class="w3-center w3-blue w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <a href="#"><i class="fa fa-facebook-official w3-hover-black"></i></a>
-    <a href="#"><i class="fa fa-instagram w3-hover-black"></i></a>
-    <a href="#"><i class="fa fa-youtube w3-hover-black"></i></a>
+    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-black"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-black"></i></a>
+    <a href="https://www.youtube.com/"><i class="fa fa-youtube w3-hover-black"></i></a>
+    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p w3-hover-black"></i></a>
+    <a href="https://twitter.com/"><i class="fa fa-twitter w3-hover-black"></i></a>
+    <a href="https://linkedin.com/"><i class="fa fa-linkedin w3-hover-black"></i></a>
   </div>
-  <p>Powered by Reserved Designs (PTY) Ltd. Est. 2023. All rights reserved.</p>
-</footer>
+  <p>Powered by <a href="https://www.tiktok.com/" target="_blank" class="w3-hover-text-black">Reserved Designs (PTY) Ltd</a> est. 2023. All Rights Reserved.</p>
+</footer
 
 <script>
   function w3_open() {
