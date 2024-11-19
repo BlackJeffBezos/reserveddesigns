@@ -8,14 +8,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+/* General Styles */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
 
 body, html {
   height: 100%;
   line-height: 1.8;
+  margin: 0;
+  padding: 0;
 }
 
-/* Full height image header */
 .bgimg-1 {
   background-position: center;
   background-size: cover;
@@ -26,7 +30,51 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .w3-top .w3-bar-item img {
+    width: 8%; /* Adjust logo size for medium screens */
+  }
+  .w3-display-left {
+    padding: 24px;
+  }
+  .w3-display-left span.w3-jumbo {
+    font-size: 2rem; /* Smaller font for tablets */
+  }
+  .w3-display-left span.w3-xxlarge {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .w3-top .w3-bar-item img {
+    width: 10%; /* Adjust logo size for small screens */
+  }
+  .w3-display-left {
+    padding: 16px;
+  }
+  .w3-display-left span.w3-jumbo {
+    font-size: 1.5rem; /* Smaller font for phones */
+  }
+  .w3-display-left span.w3-xxlarge {
+    font-size: 1rem;
+  }
+  .w3-row .w3-third {
+    width: 100%; /* Make content stack vertically */
+    margin-bottom: 16px;
+  }
+  .w3-image {
+    width: 90%; /* Scale footer image */
+    margin: auto;
+    display: block;
+  }
+  footer .w3-xlarge {
+    font-size: 1.5rem; /* Adjust icon size in footer */
+  }
+}
 </style>
+
 </head>
 <body>
 
