@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>reserveddesigns</title>
+<title>Reserved Designs - Store</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -18,6 +18,19 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+/* Responsive container for the Ecwid store */
+.ecwid-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
 </style>
 </head>
 <body>
@@ -29,12 +42,11 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
-      <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue"></i> STORE</a>
-      <a href="About.html" class="w3-bar-item w3-button w3-hover-blue"></i> ABOUT</a>
-      <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue"></i> CONTACT</a>
+      <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
+      <a href="About.html" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
+      <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
@@ -50,24 +62,28 @@ body, html {
   <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
 </nav>  
 
-      <!-- Store Section -->
+<!-- Store Section -->
 <div class="w3-container w3-content" style="max-width:800px" id="home">
-    <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:65px"><h2 class="w3-wide"><b>STORE</b></h2></div>
-    <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:32px"><h3 class="w3-wide">Welcome to our store, All the crafts are Reserved just for you.</h3></div>
-</div>
-<div class="w3-container w3-content" style="max-width:1000px">
-<h2>NEW CRAFTS COMING UP EVERY WEEK, WATCH US ON YOUTUBE & TIKTOK TO WITNESS THE CREATION JOURNEY, THE FUN AND CHALLENGES EXPERIENCED TO BRING THEM TO LIFE. 
-</h2>
-</div>
-
-
-
-
-<img src="Website pictures/BANK FOOTER.png" class="w3-image" style="width:100%;margin-top:48px;margin-bottom:0px;margin-left:30px">
-    <!-- Infomation photo -->
-    <img src="Website pictures/Footer info 4.png" class="w3-image w3-greyscale" style="width:40%;margin-top:60px;margin-bottom:48px;margin-left:350px">
+  <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:65px"><h2 class="w3-wide"><b>STORE</b></h2></div>
+  <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:32px">
+    <h3 class="w3-wide">Welcome to our store. All the crafts are Reserved just for you.</h3>
   </div>
 </div>
+<div class="w3-container w3-content" style="max-width:1000px">
+  <h2>NEW CRAFTS COMING UP EVERY WEEK, WATCH US ON YOUTUBE & TIKTOK TO WITNESS THE CREATION JOURNEY, THE FUN, AND CHALLENGES EXPERIENCED TO BRING THEM TO LIFE.</h2>
+</div>
+
+<!-- Ecwid Store -->
+<div class="ecwid-container">
+  <!-- Ecwid embed code -->
+  <script data-cfasync="false" src="https://app.ecwid.com/script.js?your_store_id" defer></script>
+  <div id="my-store-12345678"></div>
+</div>
+
+<img src="Website pictures/BANK FOOTER.png" class="w3-image" style="width:100%;margin-top:48px;margin-bottom:0px;margin-left:30px">
+
+<!-- Information Photo -->
+<img src="Website pictures/Footer info 4.png" class="w3-image w3-greyscale" style="width:40%;margin-top:60px;margin-bottom:48px;margin-left:350px">
 
 <!-- Footer -->
 <footer class="w3-center w3-blue w3-padding-64">
@@ -84,31 +100,15 @@ body, html {
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
+// Sidebar toggle functionality
 function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
+  document.getElementById("mySidebar").style.display = "block";
 }
-
-// Close the sidebar with the close button
 function w3_close() {
-    mySidebar.style.display = "none";
+  document.getElementById("mySidebar").style.display = "none";
 }
 </script>
 
 </body>
 </html>
+
