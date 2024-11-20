@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>reserveddesigns</title>
+<title>Reserved Designs</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -23,222 +23,190 @@ body, html {
   padding: 16px;
 }
 
-/* Flexbox for sections */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.flex-item {
-  flex: 1 1 45%;
-  padding: 20px;
-}
-
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Ensure responsive margins and padding */
-.w3-container, .w3-content {
-  padding: 15px;
-  margin: auto;
+/* Background images for sections */
+.section-brand {
+  background: url('Website pictures/Identity3.png') no-repeat center center/cover;
+  padding: 50px 15px;
+  text-align: right;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: auto;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.section-print {
+  background: url('Website pictures/t\ Shirt\ Design.jpg') no-repeat center center/cover;
+  padding: 50px 15px;
+  text-align: left;
+}
+
+.section-marketing {
+  background: url('Website pictures/Marketing.png') no-repeat center center/cover;
+  padding: 50px 15px;
+  text-align: right;
+}
+
+.section-illustration {
+  background: url('Website pictures/Print\ Designs.jpg') no-repeat center center/cover;
+  padding: 50px 15px;
+  text-align: left;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .flex-item {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-  }
-
-  .w3-bar .w3-button {
-    padding: 12px;
-    font-size: 14px;
-  }
-
   h1, h2, h4 {
     font-size: 18px;
   }
 
-  .w3-image {
-    margin-left: 0;
-    margin-right: 0;
+  ul {
+    font-size: 14px;
   }
+
+  /* Reduce background image opacity on small screens */
+  .section-marketing {
+    position: relative;
+    background: none;
+  }
+
+  .section-marketing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Website pictures/Marketing.png') no-repeat center center/cover;
+    opacity: 0.5; /* Adjust this value to set the desired opacity */
+    z-index: -1;
+  }
+
+  .section-marketing * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-get {
+  text-align: left;
 }
 
-@media (max-width: 480px) {
-  .w3-bar .w3-button {
-    font-size: 12px;
-  }
+.section-Portfolio {
+  text-align: left;
+}
 
-  h1, h2 {
-    font-size: 16px;
-  }
 }
 </style>
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-wide"><img src="Website pictures/logo.JPG" alt="LOGO here" style="width:5%;margin-left: 0px">Reserved Designs</a>
-    <!-- Right-sided navbar links -->
+    <a href="index.html" class="w3-bar-item w3-wide">
+      <img src="Website pictures/RESEVED DESIGNS LOGO.jpg" alt="LOGO" style="width:50px;"> Reserved Designs
+    </a>
     <div class="w3-right w3-hide-small">
       <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
-      <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue"></i> STORE</a>
-      <a href="About.html" class="w3-bar-item w3-button w3-hover-blue"></i> ABOUT</a>
-      <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> ×</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
-  <a href="Store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
-  <a href="About.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
-  <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
-</nav>
-
-  <!-- Graphic Design Section -->
-<div class="w3-container w3-content" style="max-width:800px" id="home">
-    <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:65px"><h2 class="w3-wide"><b>GRAPHIC DESIGN</b></h2></div>
-</div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-col l6 w3-padding-large">
-      <h1><b>Bringing Your Vision to Life with Creativity and Precision</b></h1></div>
-    <div class="w3-col l6 w3-padding-large">
-      <img src="Website pictures/PAINTING GRAPHIC DESIGN INTRO.JPG" class="w3-round w3-image" alt="GRAPHIC DESIGN" style="width:50%">
+      <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
+      <a href="About.html" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
+      <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
     </div>
   </div>
-  <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
-  <div><h1><b>OUR SERVICES:</b></h1></div>
 </div>
 
- <!-- Brand Identity Design Section 1 -->
- <div style="position: relative; width: 100%; margin-left: 5%; height: 600px; background-image: url('Website\ pictures/Identity3.png'); background-size: cover; background-position: center;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5);"></div>
-    <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
-        <h2>Brand Identity Design</h2>
-        <h4>Establish a strong and memorable brand presence with our comprehensive brand identity services. From logos and color schemes to typography and brand guidelines, we ensure your brand stands out in the marketplace.
-        </h4>
-    </div>
-    <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
-    <ul><li><h4>Logo Design</h4></li></ul>
-    <ul><li><h4>Brand Guidelines</h4></li></ul>
-    <ul><li><h4>Business Cards & Stationery</h4></li></ul>
-    </div>
-</div>
+<!-- Brand Identity Section -->
+<section class="section-brand">
+  <h1><b>Brand Identity Design</b></h1>
+  <ul>
+    <li>Logo design</li>
+    <li>Business cards</li>
+    <li>Brand guidelines</li>
+    <li>Letterheads</li>
+  </ul>
+</section>
 
-<hr style="border: 1px solid #ccc; margin: 20px 0;">
+<br>
 
-<!-- Marketing resources Section 2 -->
-<div style="position: relative; width: 80%; margin-left: 8.3%; height: 600px; background-image: url('Website\ pictures/Marketing.png'); background-size: cover; background-position: center;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5);"></div>
-    <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
-    <ul><li><h4>Brochures & Flyers</h4></li></ul>
-    <ul><li><h4>Social Media Graphics</h4></li></ul>
-    <ul><li><h4>Email Signature  & Campaign Designs</h4></li></ul>
-    <ul><li><h4>Posters & Banners</h4></li></ul>
-    </div>
-    <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
-        <h2>Marketing Materials</h2>
-        <h4>Enhance your marketing efforts with professionally designed materials that capture attention and communicate your message effectively.
-        </h4>
-    </div>
-</div>
+<!-- Print Design Section -->
+<section class="section-print">
+  <h1><b>Print Design</b></h1>
+  <ul>
+    <li>Flyers</li>
+    <li>Posters</li>
+    <li>Brochures</li>
+    <li>Stickers</li>
+  </ul>
+</section>
 
-<hr style="border: 1px solid #ccc; margin: 20px 0;">
+<br>
 
-<!-- Digital gRAPGHICS Section 3 -->
-<div style="position: relative; width: 80%; margin-left: 10%; height: 600px; background-image: url('Website\ pictures/Infographics3.png'); background-size: cover; background-position: center;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5);"></div>
-    <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
-        <h2>Digital Graphics</h2>
-        <h4>Create captivating visuals for your online presence. Our digital graphic designs are optimized for various platforms, ensuring consistency and impact across all channels.
-        </h4>
-    </div>
-    <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
-    <ul><li><h4>Website Graphics</h4></li></ul>
-    <ul><li><h4>Infographics</h4></li></ul>
-    <ul><li><h4>Presentation</h4></li></ul>
-    <ul><li><h4>UI/UX Elements</h4></li></ul>
-    </div>
-</div>
+<!-- Marketing Materials Section -->
+<section class="section-marketing">
+  <h1><b>Marketing Materials</b></h1>
+  <ul>
+    <li>Social media posts</li>
+    <li>Website banners</li>
+    <li>Digital advertising assets</li>
+    <li>Infographics</li>
+  </ul>
+</section>
 
-<hr style="border: 1px solid #ccc; margin: 20px 0;">
+<br>
 
-<!-- Print Design Section 4 -->
-<div style="position: relative; margin-left: 10%; width: 80%; height: 600px; background-image: url('Website\ pictures/t Shirt Design.jpg'); background-size: cover; background-position: center;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5);"></div>
-    <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
-    <ul><li><h4>Product Packaging</h4></li></ul>
-    <ul><li><h4>T-Shirt Design</h4></li></ul>
-    </div>
-    <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
-        <h2>Print Design</h2>
-        <h4>From designing for T-Shirt printing business/brand to Product packaging that stands out on the shelf. Whether for brand or personal expression we got you covered.
-        </h4>
-    </div>
-</div>
+<!-- Illustration Section -->
+<section class="section-illustration">
+  <h1><b>Illustration & Custom Artwork</b></h1>
+  <ul>
+    <li>Character design</li>
+    <li>Concept art</li>
+    <li>Vector illustrations</li>
+    <li>Custom artwork</li>
+  </ul>
+</section>
 
-<hr style="border: 1px solid #ccc; margin: 20px 0;">
 
-<!-- Custome Illustration Section 5 -->
-<div style="position: relative; width: 80%;margin-left: 10%; height: 600px; background-image: url('Website\ pictures/Print Designs.jpg'); background-size: cover; background-position: center;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5);"></div>
-    <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
-        <h2>Custome Illustration</h2>
-        <h4>We design custom-made illustrations tailored to your project's unique requirements. Whether it's for comics, cosplay, presentations or personal projects, our illustrations add a distinctive touch to your creations.
-        </h4>
-    </div>
-    <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
-    <ul><li><h4>Custome Illustration</h4></li></ul>
-    <ul><li><h4>Character Designs</h4></li></ul>
-    <ul><li><h4>Personalized Artwork</h4></li></ul>
-    </div>
-</div>
-
+<!-- get started Section -->
+<section class="section-get">
 <div style="position: relative; width: 80%;margin-left: 10%; height: 600">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-    <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
-        <h2>Get Started today</h2>
-        <h4>Ready to elevate your brand ? or bring your creative projects to life? Contact us today and consult your graphic design needs and discover how we can elevate your brand.
-        </h4>
-    </div>
-    <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
-        <h2>Portfolio</h2>
-        <h4>Explore our diverse portfolio to see our accomplishments. Our portfolio showcases the versatility and quality of our graphic design services. 
-        <a href="https://pin.it/6DHkUvyFU" >View Portfolio</a>
-        </h4>
+  <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
+      <h2>Get Started today</h2>
+      <h4>Ready to elevate your brand ? or bring your creative projects to life? Contact us today and consult your graphic design needs and discover how we can elevate your brand.
+      </h4>
+  </div>
 
-    </div>
+  <!-- Portfolio Section -->
+<section class="section-Portfolio">
+  <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
+      <h2>Portfolio</h2>
+      <h4>Explore our diverse portfolio to see our accomplishments. Our portfolio showcases the versatility and quality of our graphic design services. 
+      <a href="https://pin.it/6DHkUvyFU" >View Portfolio</a>
+      </h4>
+
+  </div>
 </div>
 
-<div style="margin-top: 30%; margin-right: 10px; margin-left: 10px;">
-    <h4>Are you a Graphic Designer, Street Photographer?, <a href="https://wa.me/+27768183494">join</a> <b>SAFARI CANVAS</b> now. A Graphic Design community that aims to bring South African dedicated apparel to the main market of T-shirt printing, Street wear, Beach wear and more.
+<br>
+
+<div class="w3-container w3-center w3-content" style="max-width:80%; margin-top: 30px">
+  <h4>Are you a Graphic Designer, Street Photographer?, <a href="https://wa.me/+27768183494">join</a> <b>SAFARI CANVAS</b> now. A Graphic Design community that aims to bring South African dedicated apparel to the main market of T-shirt printing, Street wear, Beach wear and more.
 </h4>
 </div>
-    <!-- Infomation photo -->
-    <img src="Website pictures/Footer info 4.png" class="w3-image w3-greyscale" style="width:40%;margin-top:60px;margin-bottom:48px;margin-left:350px">
-  </div>
+
+ <!-- Infomation photo -->
+  <div class="w3-container w3-center w3-content" style="max-width:800px">
+ <img src="Website pictures/Footer info 4.png" class="w3-image w3-greyscale" style="width:60%">
 </div>
 
 <!-- Footer -->
@@ -253,35 +221,36 @@ img {
     <a href="https://www.linkedin.com/in/ndinga-dyongo-584312238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin w3-hover-black"></i></a>
   </div>
   <p>Powered by <a href="https://www.tiktok.com//@the_last_jonin/" title="cava us on tiktok" target="_blank" class="w3-hover-text-black">Reserved Designs (PTY) Ltd</a> est. 2023. All Rights reserved.</p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
+  </footer>
+  
+  <script>
+  // Modal Image Gallery
+  function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
   } else {
     mySidebar.style.display = 'block';
   }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
     mySidebar.style.display = "none";
-}
-</script>
-
-</body>
-</html>. 
+  }
+  </script>
+  
+  </body>
+  </html>
+  
 
