@@ -33,7 +33,7 @@ img {
 .section-brand {
   background: url('Website pictures/Identity3.png') no-repeat center center/cover;
   padding: 50px 15px;
-  text-align: right;
+  text-align: left;
 }
 
 ul {
@@ -45,6 +45,12 @@ ul {
 
 li {
   margin: 5px 0;
+}
+
+.section-graphics {
+  background: url('Website pictures/Infographics3.png') no-repeat center center/cover;
+  padding: 50px 15px;
+  text-align: right;
 }
 
 .section-print {
@@ -111,19 +117,48 @@ li {
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-wide">
-      <img src="Website pictures/RESEVED DESIGNS LOGO.jpg" alt="LOGO" style="width:50px;"> Reserved Designs
-    </a>
+    <a href="index.html" class="w3-bar-item w3-wide"><img src="Website Pictures/RESEVED DESIGNS LOGO.jpg" alt="LOGO here" style="width:5%;margin-left: 0px">Reserved Designs</a>
+    <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
-      <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
-      <a href="About.html" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
-      <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
+      <a href="Store.html" class="w3-bar-item w3-button w3-hover-blue"></i> STORE</a>
+      <a href="About.html" class="w3-bar-item w3-button w3-hover-blue"></i> ABOUT</a>
+      <a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+  <a href="Store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">STORE</a>
+  <a href="About.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">ABOUT</a>
+  <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
+</nav>
+
+  <!-- Graphic Design Section -->
+<div class="w3-container w3-content" style="max-width:800px" id="home">
+    <div class="w3-container w3-content w3-center" style="max-width:800px;margin-top:65px"><h2 class="w3-wide"><b>GRAPHIC DESIGN</b></h2></div>
+</div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col l6 w3-padding-large">
+      <h1><b>Bringing Your Vision to Life with Creativity and Precision</b></h1></div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="Website pictures/PAINTING GRAPHIC DESIGN INTRO.jpg" class="w3-round w3-image" alt="GRAPHIC DESIGN" style="width:50%">
     </div>
   </div>
+  <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+  <div><h1><b>OUR SERVICES:</b></h1></div>
 </div>
 
 <!-- Brand Identity Section -->
@@ -131,9 +166,21 @@ li {
   <h1><b>Brand Identity Design</b></h1>
   <ul>
     <li>Logo design</li>
-    <li>Business cards</li>
+    <li>Business cards & statienry</li>
     <li>Brand guidelines</li>
-    <li>Letterheads</li>
+  </ul>
+</section>
+
+<br>
+
+<!-- Digital Graphics Section -->
+<section class="section-graphics">
+  <h1><b>Digital Graphics</b></h1>
+  <ul>
+    <li>Website Graphics</li>
+    <li>Infographics</li>
+    <li>Presentation</li>
+    <li>UI/UX Elementsn</li>
   </ul>
 </section>
 
@@ -143,10 +190,8 @@ li {
 <section class="section-print">
   <h1><b>Print Design</b></h1>
   <ul>
-    <li>Flyers</li>
-    <li>Posters</li>
-    <li>Brochures</li>
-    <li>Stickers</li>
+    <li>T-Shirt Design and Printing</li>
+    <li>Product package design</li>
   </ul>
 </section>
 
@@ -156,10 +201,11 @@ li {
 <section class="section-marketing">
   <h1><b>Marketing Materials</b></h1>
   <ul>
-    <li>Social media posts</li>
-    <li>Website banners</li>
-    <li>Digital advertising assets</li>
-    <li>Infographics</li>
+    <li>Social media Graphics</li>
+    <li>Posters & Banners</li>
+    <li>Digital advertising resources</li>
+    <li>Brochures & flyers</li>
+    <li>Email signatures & Campaign assets</li>
   </ul>
 </section>
 
@@ -252,5 +298,6 @@ li {
   
   </body>
   </html>
+  
   
 
