@@ -15,9 +15,21 @@ body, html {
   line-height: 1.8;
 }
 
+.info-image {
+  display: block;
+  width: 40%;
+  max-width: 100%;
+  margin: 60px auto 48px;
+}
+
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+/* Media queries for responsiveness */
+.info-image {
+    width: 100px;
+  }
 </style>
 </head>
 <body>
@@ -25,7 +37,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-wide"><img src="Website pictures/logo.JPG" alt="LOGO here" style="width:5%;margin-left: 0px">Reserved Designs</a>
+    <a href="index.html" class="w3-bar-item w3-wide"><img src="Website Pictures/RESEVED DESIGNS LOGO.jpg" alt="Reserved Designs LOGO here" style="width:5%;margin-left: 0px">Reserved Designs</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
@@ -50,44 +62,44 @@ body, html {
   <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">CONTACT</a>
 </nav>
 
-<!-- Home Section -->
-  <div class="w3-container w3-content" style="max-width:800px" id="home">
-    <div class="w3-container w3-content w3-center" style="max-width:800px; margin-top:65px">
-        <h2 class="w3-wide"><b>CAD & 3D PRINTING</b></h2>
-        </div>
-    </div>
-    
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-    <h4>At the core of modern product development and prototyping, CAD (Computer-Aided Design) and 3D Printing stand as pivotal tools for new product development, enabling us to transform complex ideas into precise digital models and physical prototypes.</h4>
-    <h4>Our services cater to both professionals and hobbyists, supporting a wide range of projects. We have expertise and proven track record in developing industrial parts/enclosures, replicating broken/worn parts at home/work, building custom parts for RC enthusiasts or crafting unique accessories for cosplay.</h4>
-    <h4>We bring your concepts to life with the highest level of accuracy and creativity, making us a trusted partner for all your CAD and 3D printing needs.</h4>
-</div>
-  
-  <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-bottomleft w3-black w3-padding" style="width: 42.5%; margin-left:900px"><a href="https://www.tiktok.com/@the_last_jonin">ProGuard</a> Enclosure</div>
-        <img src="Website pictures/3D PRINTED FINAL PART.jpg" alt="ProGuard Enclosure" style="width:100%;margin-top:48px;margin-bottom:48px;margin-left:550px">
-      </div>
-    </div>
+<!-- Main Content -->
+<div class="w3-container" style="margin-top:65px;">
+  <!-- Header Section -->
+  <header class="w3-container w3-center w3-padding-32">
+      <h2 class="w3-wide"><b>CAD & 3D PRINTING</b></h2>
+  </header>
 
-    <div class="w3-half">
-        <div class="w3-row-padding">
-          <div class="w3-half w3-margin-bottom">
-            <div class="w3-display-container">
-              <img src="Website pictures/CAD Modelling.jpg" alt="CAD/MODELLING" style="width:100%;margin-top:48px;margin-bottom:5px;margin-left:-400px">
-            </div>
-          </div>
-        </div>
-        <div class="w3-row-padding">
-            <div class="w3-half w3-margin-bottom">
-              <div class="w3-display-container">
-                <img src="Website pictures/3D PRINTING MACHINE.jpg" alt="3D PRINTING" style="width:100%;margin-top:5px;margin-bottom:5px;margin-left:-400px">
-              </div>
-            </div>
-          </div>
-    </div>
+  <!-- Intro Section -->
+  <div class="w3-container w3-content" style="max-width:800px;">
+      <h4>At the core of modern product development and prototyping, CAD (Computer-Aided Design) and 3D Printing stand as pivotal tools for new product development, enabling us to transform complex ideas into precise digital models and physical prototypes.</h4>
+      <h4>Our services cater to both professionals and hobbyists, supporting a wide range of projects. We have expertise and a proven track record in developing industrial parts/enclosures, replicating broken/worn parts at home/work, building custom parts for RC enthusiasts, or crafting unique accessories for cosplay.</h4>
+      <h4>We bring your concepts to life with the highest level of accuracy and creativity, making us a trusted partner for all your CAD and 3D printing needs.</h4>
   </div>
+
+  <!-- Highlight Section -->
+  <div class="w3-row-padding w3-padding-16">
+      
+      <div class="w3-half">
+          <div class="w3-row-padding">
+              <div class="w3-half">
+                  <img src="Website pictures/CAD Modelling.jpg" alt="CAD Modeling" style="width:100%;">
+              </div>
+              <div class="w3-half">
+                  <img src="Website pictures/3D PRINTING MACHINE.jpg" alt="3D Printing" style="width:100%;">
+              </div>
+          </div>
+      </div>
+
+      <div class="w3-half">
+          <div class="w3-display-container">
+              <img src="Website pictures/3D PRINTED FINAL PART.jpg" alt="ProGuard Enclosure" style="width:100%;">
+              <div class="w3-display-bottom w3-black w3-padding">
+                  <a href="https://www.tiktok.com/@the_last_jonin" class="w3-hover-opacity">ProGuard Enclosure</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 <!-- CAD SECTION -->
 <div class="w3-container w3-content" style="max-width:800px">
@@ -283,12 +295,12 @@ body, html {
         </div>
       </div>
   </div>
-    
 
-    <!-- Infomation photo -->
-    <img src="Website pictures/Footer info 4.png" class="w3-image w3-greyscale" style="width:40%;margin-top:60px;margin-bottom:48px;margin-left:350px">
   </div>
 </div>
+
+    <!-- Infomation photo -->
+<img src="Website pictures/Footer info 4.png" style="width: 500px" alt="Information" class="info-image">
 
 <!-- Footer -->
 <footer class="w3-center w3-blue w3-padding-64">
@@ -360,3 +372,4 @@ function showDivs(n) {
 </script>
 </body>
 </html>
+
