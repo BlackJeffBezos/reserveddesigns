@@ -90,6 +90,35 @@ li {
   text-align: left;
 }
 
+/* General styling for the content container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.container .section {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .section {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   h1, h2, h4 {
@@ -268,24 +297,20 @@ li {
 
 
 <!-- get started Section -->
-<section class="section-get">
-<div style="position: relative; width: 80%;margin-left: 10%; height: 600">
-  <div style="position: relative; width: 45%; float: left; color: black; padding: 20px;">
-      <h2>Get Started today</h2>
-      <h4>Ready to elevate your brand ? or bring your creative projects to life? Contact us today and consult your graphic design needs and discover how we can elevate your brand.
-      </h4>
-  </div>
-  </div>
-
   <!-- Portfolio Section -->
-<section class="section-Portfolio">
-  <div style="position: relative; width: 45%; float: right; color: black; text-align: left; padding: 20px;">
-      <h2>Portfolio</h2>
-      <h4>Explore our diverse portfolio to see our accomplishments. Our portfolio showcases the versatility and quality of our graphic design services. 
-      <a href="https://pin.it/6DHkUvyFU" >View Portfolio</a>
-      </h4>
+<div class="container">
+  <div class="section">
+    <h2>Get Started Today</h2>
+    <p>Ready to elevate your brand ? or bring your creative projects to life? Contact us today and consult your graphic design needs and discover how we can elevate your brand.</p>
   </div>
+  <div class="section">
+    <h2>Portfolio</h2>
+    <p>Explore our diverse portfolio to see our accomplishments. Our portfolio showcases the versatility and quality of our graphic design services. 
+      <a href="https://pin.it/6DHkUvyFU" >View Portfolio</a></p>
+  </div>
+</div>
 
+  
 <br>
 
 <div class="w3-container w3-center w3-content" style="max-width:80%; margin-top: 30px">
